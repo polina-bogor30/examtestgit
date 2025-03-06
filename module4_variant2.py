@@ -23,6 +23,7 @@ class SalesHistory(Toplevel):
         cursor = conn.cursor()
 
         try:
+            print(partner_name)
             cursor.execute('''select Продукция, КоличествоПродукции, ДатаПродажи 
             from Partner_products_import
             where НаименованиеПартнера=?''', (partner_name,))
