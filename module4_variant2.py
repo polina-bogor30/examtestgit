@@ -36,7 +36,6 @@ class SalesHistory(Toplevel):
                 self.label_data.pack(side='left')
 
 
-
         except Error as e:
             messagebox.showerror('Ошибка', f'Ошибка подключения к бд: {e}')
 
